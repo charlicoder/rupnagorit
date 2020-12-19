@@ -1,0 +1,58 @@
+<div class="header-wrapper header-wrapper-home">
+
+    <!-- ******HEADER****** -->
+    <header id="header" class="header fixed-top">
+        <div class="container">
+
+            <h1 class="logo">
+                <a href="{% url 'home' %}"><span class="highlight">Dev</span>Studio</a>
+            </h1><!--//logo-->
+
+            <nav class="main-nav navbar navbar-expand-md navbar-dark" role="navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar-collapse" class="navbar-collapse collapse justify-content-end">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="{% url 'home' %}">Work <i class="fas fa-angle-down"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="{% url 'home' %}">Our Work</a>
+                                <a class="dropdown-item" href="{% url 'home' %}">Single Case Study 1</a>
+                                <a class="dropdown-item" href="{% url 'home' %}">Single Case Study 2</a>
+                                <a class="dropdown-item" href="{% url 'home' %}">Single Blog Post</a>
+                                <a class="dropdown-item" href="{% url 'home' %}">404 Page</a>
+                            </div>
+                        </li><!--//dropdown-->
+                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Blog</a></li>
+                        <li class="nav-item last"><a class="nav-link" href="{% url 'home' %}">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="bg-slider-wrapper">
+        <div id="bg-slider" class="flexslider bg-slider">
+            <ul class="slides">
+                <li class="slide slide-1" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"></li>
+                <li class="slide slide-2 flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"></li>
+                <li class="slide slide-3" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"></li>
+            </ul>
+        </div>
+    </div><!--//bg-slider-wrapper-->
+    <section id="home-promo" class="home-promo section">
+        <div class="container text-center">
+            <h2 class="title">
+                <span class="upper">We build</span>
+                <span class="middle">Web and Mobile Apps</span>
+                <span class="bottom">for startups and agencies</span>
+            </h2>
+            <button class="btn btn-cta btn-cta-primary" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static">Talk to us</button>
+        </div><!--//container-->
+    </section><!--//promo-->
+</div>
+<!--//header-wrapper-->

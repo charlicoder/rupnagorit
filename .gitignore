@@ -1,9 +1,10 @@
 venv*
 
 *.pyc
-.DS_Store
+*/__pycache__
+*/.DS_Store
 
 # database & logs
-*.db
-*.sqlite3
+*/*.db
+*/*.sqlite3
 *.log
