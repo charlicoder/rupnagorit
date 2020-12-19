@@ -1,0 +1,9 @@
+venv*
+
+*.pyc
+.DS_Store
+
+# database & logs
+*.db
+*.sqlite3
+*.log
