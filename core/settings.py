@@ -2,7 +2,6 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -11,9 +10,9 @@ print(BASE_DIR)
 SECRET_KEY = '!y7qy0stj)ywn_wekt0#)le11h@p2d68!urwc_a6+3&a$64xnh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['13.228.219.163', 'rupnagorit.com', 'localhost']
+ALLOWED_HOSTS = ['13.228.219.163', 'rupnagorit.com', 'rupnagorit.local', 'localhost']
 
 
 # Application definition
@@ -109,10 +108,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS =  [ BASE_DIR / 'core/static/', ]
+STATICFILES_DIRS = (BASE_DIR / 'core/static/', )
 
-STATIC_ROOT = BASE_DIR / 'public/staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR / 'public/media/'
+MEDIA_ROOT = BASE_DIR / '/media/'
