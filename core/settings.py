@@ -13,7 +13,7 @@ SECRET_KEY = '!y7qy0stj)ywn_wekt0#)le11h@p2d68!urwc_a6+3&a$64xnh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['13.228.219.163', 'rupnagorit.com', 'localhost']
 
 
 # Application definition
@@ -111,8 +111,8 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS =  [ BASE_DIR / 'core/static/', ]
 
-STATIC_ROOT = BASE_DIR / 'public'
+STATIC_ROOT = BASE_DIR / 'public/staticfiles'
 
-# MEDIA_URL = '/media/'
-#
-# MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'public/media/'
