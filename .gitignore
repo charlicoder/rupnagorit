@@ -8,3 +8,7 @@ venv*
 */*.db
 */*.sqlite3
 *.log
+
+public/staticfiles/*
+public/media/*
+
